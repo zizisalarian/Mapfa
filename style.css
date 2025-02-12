@@ -18,8 +18,12 @@ body{
 
     position: relative;
 }
+
 a{
     text-decoration: none;
+}
+ul{
+    list-style-type: none;
 }
 .hr-line{
     width: 100%;
@@ -217,6 +221,12 @@ form{
             color: var(--main-color);
         }
     }
+    h2{
+        text-align: center;
+        margin-bottom: 0.8rem;
+        color: #1673c0;
+        font-size: 1rem;
+    }
 }
 
 .footer-register{
@@ -225,14 +235,51 @@ form{
     align-items: center;
     height: 30px;
     a{
+        transition: .4s;
         color: #555;
         &:first-child{
             font-size: 0.7rem;
-            /* width: 60%; */
 
         }
         &:last-child{
             font-size: 1rem;
         }
+
+        &:hover{
+            color: var(--main-color);
+        }
     }
+}
+.guide{
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    li{
+
+        a{
+            font-size: 0.7rem;
+            color: #666;
+            font-weight: 500;
+            align-items: center;
+            display: flex;
+            gap: 0.5rem;
+            padding:0.3rem 0.5rem;
+            border-radius: 50px;
+            background-color: #ffffff44;
+            transition: 0.4s;
+            &:hover{
+                
+                background-color: #ffffff99;
+            }
+
+            svg{
+                width: 1rem;
+                height: 1rem;
+                fill:#aaa;
+            }
+        } 
+    }
+}
 }
